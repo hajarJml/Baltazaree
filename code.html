@@ -85,9 +85,92 @@
       .content-container {
         max-width: 960px;
       }
+
+      .navbar {
+        padding: 15px 0;
+        }
+
+    .navbar-brand img {
+    height: 40px;
+    }
+
+    .nav-link {
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: color 0.3s;
+    }
+
+    .nav-link:hover {
+    color: #e94560;
+    }
+
+    .btn-twitch {
+    background-color: #6441a5;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+    }
+
+    .btn-twitch:hover {
+    background-color: #9147ff;
+    }
+
+    .twitch-logo {
+    height: 20px;
+    width: auto;
+    }
+
+    .card-body-img{
+        display: flex;
+    }
+
+    .card-body-left{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-body-left img{
+        padding-right: 100% ;
+    }
+
+
     </style>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">
+            <img src="https://via.placeholder.com/50" alt="Logo" class="d-inline-block align-top">
+          </a>
+      
+          <!-- Bouton pour mobiles -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <!-- Contenu du menu -->
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#marques">Marques Partenaires</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#faq">FAQ</a>
+              </li>
+            </ul>
+            <button class="btn btn-twitch d-flex align-items-center">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Twitch_logo.svg" alt="Twitch Logo" class="twitch-logo me-2">
+              Se connecter avec Twitch
+            </button>
+          </div>
+        </div>
+    </nav>
+      
     <div class="main-content">
       <div class="content-container py-5">
         <h1 class="section-title">Toplist Actives</h1>
@@ -95,35 +178,48 @@
           <div class="col-md-6">
             <div class="card-item">
               <div class="card-body">
-                <h5 class="card-title">Holy</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-                <img
-                  src="https://via.placeholder.com/100"
-                  alt="Icon"
-                  class="d-block mx-auto mb-3"
-                />
-                <button class="btn button-primary">Action 1</button>
-                <button class="btn button-primary">Action 2</button>
+                <div class="card-body-img">
+                    <div class="card-body-left">
+                        <img
+                        src="https://via.placeholder.com/100"
+                        alt="Icon"
+                        class="d-block mx-auto mb-3"
+                        />
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          </p>
+                    </div>
+                    
+                    <img
+                    src="https://via.placeholder.com/100"
+                    alt="Icon"
+                    class="d-block mx-auto mb-3"
+                    />
+                </div>
               </div>
             </div>
           </div>
           <div class="col-md-6">
             <div class="card-item">
-              <div class="card-body">
-                <h5 class="card-title">Awards</h5>
-                <p class="card-text">
-                  Sed do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua.
-                </p>
-                <img
-                  src="https://via.placeholder.com/100"
-                  alt="Icon"
-                  class="d-block mx-auto mb-3"
-                />
-                <button class="btn button-primary">Action 1</button>
-                <button class="btn button-primary">Action 2</button>
+              <div class="card-body">                
+                <div class="card-body-img">
+                    <div class="card-body-left">
+                        <img
+                        src="https://via.placeholder.com/100"
+                        alt="Icon"
+                        class="d-block mx-auto mb-3"
+                        />
+                        <p class="card-text">
+                            Sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua.
+                        </p>
+                    </div>
+                    <img
+                    src="https://via.placeholder.com/100"
+                    alt="Icon"
+                    class="d-block mx-auto mb-3"
+                    />
+                </div>
               </div>
             </div>
           </div>
@@ -131,37 +227,50 @@
         <div class="row mb-5 justify-content-center">
           <div class="col-md-6">
             <div class="card-item">
-              <div class="card-body">
-                <h5 class="card-title">Pringles</h5>
-                <p class="card-text">
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris.
-                </p>
-                <img
-                  src="https://via.placeholder.com/100"
-                  alt="Icon"
-                  class="d-block mx-auto mb-3"
-                />
-                <button class="btn button-primary">Action 1</button>
-                <button class="btn button-primary">Action 2</button>
+              <div class="card-body">                
+                <div class="card-body-img">
+                    <div class="card-body-left">
+                        <img
+                        src="https://via.placeholder.com/100"
+                        alt="Icon"
+                        class="d-block mx-auto mb-3"
+                        />
+                        <p class="card-text">
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris.
+                        </p>
+                    </div>
+                    
+                    <img
+                    src="https://via.placeholder.com/100"
+                    alt="Icon"
+                    class="d-block mx-auto mb-3"
+                    />
+                </div>
               </div>
             </div>
           </div>
           <div class="col-md-6">
             <div class="card-item">
               <div class="card-body">
-                <h5 class="card-title">Games</h5>
-                <p class="card-text">
-                  Duis aute irure dolor in reprehenderit in voluptate velit
-                  esse.
-                </p>
-                <img
-                  src="https://via.placeholder.com/100"
-                  alt="Icon"
-                  class="d-block mx-auto mb-3"
-                />
-                <button class="btn button-primary">Action 1</button>
-                <button class="btn button-primary">Action 2</button>
+                <div class="card-body-img">
+                    <div class="card-body-left">
+                        <img
+                        src="https://via.placeholder.com/100"
+                        alt="Icon"
+                        class="d-block mx-auto mb-3"
+                        />
+                        <p class="card-text">
+                            Duis aute irure dolor in reprehenderit in voluptate velit
+                            esse.
+                        </p>
+                    </div>
+                    <img
+                    src="https://via.placeholder.com/100"
+                    alt="Icon"
+                    class="d-block mx-auto mb-3"
+                    />
+                </div>
               </div>
             </div>
           </div>
