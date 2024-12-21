@@ -8,6 +8,8 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
     <style>
       body {
         background-color: #1a1a2e;
@@ -61,15 +63,27 @@
       }
 
       .cta-container {
+        height: auto;
         text-align: center;
         margin-top: 50px;
       }
 
       .cta-item {
-        background-color: #1f4068;
         padding: 15px;
         border-radius: 10px;
         transition: background-color 0.3s;
+        border: 2px solid #442589; /* Bordure de 2px avec couleur */
+        border-radius: 15px; /* Coins arrondis de 5px */
+        height: 400px; 
+
+      }
+
+      .cta-item-2 {
+        padding: 15px;
+        border-radius: 10px;
+        transition: background-color 0.3s;
+        border: 2px solid #922F7C; /* Bordure de 2px avec couleur */
+        border-radius: 15px; /* Coins arrondis de 5px */
       }
 
       .cta-item:hover {
@@ -119,6 +133,10 @@
     background-color: #9147ff;
     }
 
+    .icon-card{
+      font-size: 100px;
+    }
+
     .twitch-logo {
     height: 20px;
     width: auto;
@@ -134,14 +152,79 @@
     }
 
     .card-body-left img{
-        padding-right: 100% ;
+        padding-right: 50% ;
+    }
+
+    .custom-navbar {
+      background-color: #1a1a2e;;
+    }
+
+    h2{
+      font-style: italic;
+    }
+
+    .footer-socials a {
+  font-size: 1.5rem; /* Taille des icônes */
+  transition: color 0.3s;
+  color: #f7768e; /* Couleur au survol */
+
+}
+
+.footer-text p {
+  margin-left: 50px; /* Ajoute un espacement vertical entre les paragraphes */
+}
+
+.footer-text {
+  display: flex;
+  text-align: center; /* Centrer le texte */
+}
+
+.footer-text a{
+  color: white;
+
+}
+
+.footer-text a:hover{
+  color: #f7768e;
+
+}
+
+.footer-socials i:hover {
+  color: #f7768e; /* Couleur au survol */
+}
+
+.footer-socials i {
+  color: #e94560; /* Couleur au survol */
+  display: inline-block; /* Assure un bon alignement des icônes */
+}
+
+
+
+    @media (max-width: 768px) {
+      .footer-text {
+        display: block;
+        flex-direction: row;
+        text-align: center; /* Centrer le texte */
+      }
+
+      .navbar-toggler {
+        border-color: white;
+      }
+
+      .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+      }
+
+      .footer-socials a {
+        font-size: 10px; /* Taille des icônes */
+      }
     }
 
 
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg custom-navbar">
         <div class="container">
           <!-- Logo -->
           <a class="navbar-brand" href="#">
@@ -163,10 +246,13 @@
                 <a class="nav-link" href="#faq">FAQ</a>
               </li>
             </ul>
-            <button class="btn btn-twitch d-flex align-items-center">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Twitch_logo.svg" alt="Twitch Logo" class="twitch-logo me-2">
+            <button class="btn btn-twitch mt-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitch" viewBox="0 0 16 16">
+                <path d="M3.857 0 1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0zm9.714 7.429-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142z"/>
+                <path d="M11.857 3.143h-1.143V6.57h1.143zm-3.143 0H7.571V6.57h1.143z"/>
+              </svg>
               Se connecter avec Twitch
-            </button>
+            </button> 
           </div>
         </div>
     </nav>
@@ -322,25 +408,43 @@
           <div class="row justify-content-center">
             <div class="col-md-6">
               <div class="cta-item">
-                <p>Tu es streamer ?</p>
+                <div class="icon-card">
+                  <span>🧑‍💻</span>
+                </div>                
+                <h2><b>Tu es streamer ?</b></h2>
                 <p>
                   Connecte-toi avec ton compte Twitch pour faire les Toplist
                   rémunérées de nos partenaires, profiter des récompenses et
                   offrir des cadeaux à ton tchat.
                 </p>
-                <a href="#" class="cta-link">Rejoins la plateforme</a>
-                <br />
-
-                <button class="btn button-primary mt-3">More Info</button>
+                <button class="btn btn-twitch mt-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitch" viewBox="0 0 16 16">
+                    <path d="M3.857 0 1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0zm9.714 7.429-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142z"/>
+                    <path d="M11.857 3.143h-1.143V6.57h1.143zm-3.143 0H7.571V6.57h1.143z"/>
+                  </svg>
+                  Se connecter avec Twitch
+                </button> 
               </div>
             </div>
             <div class="col-md-6">
-              <div class="cta-item">
-                <p>Vous êtes une marque ?</p>
-                <p></p>
-                <a href="#" class="cta-link">Créer un partenariat</a>
+              <div class="cta-item-2">
+                <div class="icon-card">
+                  <span>🛍️</span>
+                </div> 
+                <h2><b>Vous êtes une marque ?</b></h2>
+                <p>
+                  Proposez des toplists personnalisées que les streamers partageront à leur audience. 
+                </p>
                 <br />
-                <button class="btn button-primary mt-3">More Info</button>
+                <button class="btn button-primary mt-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+                    <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                    <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6m0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
+                  </svg>
+                  Nous contacter
+                </button>
+                <br /><br />
+
               </div>
             </div>
           </div>
@@ -348,9 +452,48 @@
       </div>
     </div>
 
-    <footer class="text-center py-4">
-      <p>&copy; 2024 Vainqueur.net | Contactez-nous</p>
+    <footer class="footer text-center py-4">
+      <div class="container d-flex justify-content-between align-items-center">
+        <!-- Image à gauche -->
+        <div class="footer-logo">
+          <img src="https://via.placeholder.com/50" alt="Logo" class="img-fluid">
+        </div>
+    
+        <!-- Texte centré -->
+        <div class="footer-text">
+          <p class="mb-0">
+            <span class="fw-bold">Contactez-nous</span>
+          </p>
+          <p>
+            <a href="#" class="footer-link">Vainqueur.net</a>
+          </p>
+        </div>
+    
+        <!-- Icônes des réseaux sociaux alignées -->
+        <div class="footer-socials d-flex justify-content-end">
+          <a href="#" class="text-primary me-3">
+            <i class="bi bi-discord"></i>
+          </a>
+          <a href="#" class="text-primary me-3">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="#" class="text-primary me-3">
+            <i class="bi bi-twitch"></i>
+          </a>
+          <a href="#" class="text-primary me-3">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a href="#" class="text-primary me-3">
+            <i class="bi bi-tiktok"></i>
+          </a>
+          <a href="#" class="text-primary">
+            <i class="bi bi-youtube"></i>
+          </a>
+        </div>
+      </div>
     </footer>
+    
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
