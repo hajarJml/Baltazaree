@@ -299,26 +299,146 @@ background-color: #7E1928;
 
 
 
-    @media (max-width: 768px) {
-      .footer-text {
-        display: block;
-        flex-direction: row;
-        text-align: center; /* Centrer le texte */
-      }
+@media (max-width: 768px) {
+  .padding {
+    padding: 10px;
+  }
 
-      .navbar-toggler {
-        border-color: white;
-      }
+  .navbar-toggler {
+    border-color: white;
+  }
 
-      .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-      }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
 
-      .footer-socials a {
-        font-size: 10px; /* Taille des icônes */
-      }
-    }
+  .footer-socials a {
+    font-size: 1rem;
+  }
 
+  .cta-item,
+  .cta-item-2 {
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .cta-item h2,
+  .cta-item-2 h2 {
+    font-size: 1.2rem;
+  }
+
+  .cta-container {
+    margin-top: 30px;
+  }
+
+  .icon-card {
+    font-size: 3rem;
+  }
+
+  .footer-socials {
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  .footer-text {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+
+  .content-container {
+    padding: 10px;
+  }
+
+  .card-item {
+    margin-bottom: 20px;
+  }
+
+  .card-item .card-body {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card-body-img {
+    flex-direction: column;
+  }
+
+
+  .card-body-img img {
+    margin-bottom: 15px;
+  }
+
+  .card-body-left {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand img {
+    width: 120px;
+  }
+
+  .cta-item,
+  .cta-item-2 {
+    padding: 15px;
+  }
+
+  .cta-item h2,
+  .cta-item-2 h2 {
+    font-size: 1rem;
+  }
+
+  .icon-card {
+    font-size: 2.5rem;
+  }
+
+  .card-item1 img,
+  .card-item2 img,
+  .card-item3 img {
+    height: auto;
+  }
+
+  .card-body-img img {
+      height: 40%;
+      padding-top: 10%;   
+   }
+
+  .footer-socials a {
+    font-size: 0.8rem;
+  }
+
+  .card-body-left img{
+   width: 100%;
+  }
+
+
+  .footer-text {
+    font-size: 0.9rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .card-item {
+    margin-bottom: 20px;
+  }
+
+  .hidden{
+    opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;  }
+}
 
     </style>
   </head>
@@ -361,7 +481,7 @@ background-color: #7E1928;
         <h1 class="section-title">Toplist Actives</h1>
         <div class="row mb-5 justify-content-center">
           <div class="col-md-6">
-            <div class="card-item violet">
+            <div class="card-item violet padding">
               <div class="card-body">
                 <div class="card-body-img">
                     <div class="card-body-left">
@@ -377,14 +497,14 @@ background-color: #7E1928;
                     <img
                     src="images/holy2.png"
                     alt="Icon"
-                    class="d-block mx-auto mb-3"
+                    class="d-block mx-auto mb-3 hidden"
                     />
                 </div>
               </div>
             </div>
           </div>
           <div class="col-md-6">
-            <div class="card-item bleu">
+            <div class="card-item bleu padding">
               <div class="card-body">                
                 <div class="card-body-img">
                     <div class="card-body-left">
@@ -400,7 +520,7 @@ background-color: #7E1928;
                     <img
                     src="images/samsung.png"
                     alt="Icon"
-                    class="d-block mx-auto mb-3"
+                    class="d-block mx-auto mb-3 hidden"
                     />
                 </div>
               </div>
@@ -426,7 +546,7 @@ background-color: #7E1928;
                     <img
                     src="images/netflixPr.png"
                     alt="Icon"
-                    class="d-block mx-auto mb-3"
+                    class="d-block mx-auto mb-3 hidden"
                     />
                 </div>
               </div>
@@ -449,7 +569,7 @@ background-color: #7E1928;
                     <img
                     src="images/obelix.png"
                     alt="Icon"
-                    class="d-block mx-auto mb-3"
+                    class="d-block mx-auto mb-3 hidden"
                     />
                 </div>
               </div>
