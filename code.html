@@ -12,7 +12,7 @@
 
     <style>
       body {
-        background-color: #1a1a2e;
+        background-color: #0C0B27;
         color: #fff;
         font-family: Arial, sans-serif;
         margin: 0;
@@ -48,6 +48,77 @@
       .card-item:hover {
         transform: scale(1.05);
         box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      .card-item1 {
+        height: 200px;
+        background-color: #143CDC;
+        border: none;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s, box-shadow 0.3s;
+        padding: 20%;
+      }
+
+      .card-item1 .card-body {
+        display: flex;
+      }
+
+      .card-item1 .card-body  {
+        text-align: center;
+      }
+
+      .card-item1 .card-body img {
+        height: 100%;
+        text-align: center;
+      }
+
+
+
+      .card-item1:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      .card-item2 {
+        height: 200px;
+        background-color: #C54B5D;
+        border: none;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s, box-shadow 0.3s;
+        padding: 25%;
+      }
+
+      .card-item2:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      .card-item3 {
+        height: 200px;
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s, box-shadow 0.3s;
+        padding: 15%;
+      }
+
+      .card-item3:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      
+
+      .card-item2 img{
+        width:100%;
+      }
+
+      .card-item3 img{
+        max-width:80%;
+        max-height: 100px;
       }
 
       .button-primary {
@@ -144,7 +215,13 @@
 
     .card-body-img{
         display: flex;
+        height: 250px;
     }
+
+    .card-body-img img {
+      height: 100%;
+      padding-top: 10%;   
+   }
 
     .card-body-left{
         display: flex;
@@ -153,10 +230,11 @@
 
     .card-body-left img{
         padding-right: 50% ;
+        width: 100%;
     }
 
     .custom-navbar {
-      background-color: #1a1a2e;;
+      background-color: #0C0B27;
     }
 
     h2{
@@ -228,7 +306,7 @@
         <div class="container">
           <!-- Logo -->
           <a class="navbar-brand" href="#">
-            <img src="https://via.placeholder.com/50" alt="Logo" class="d-inline-block align-top">
+            <img src="images/logoNavbar.png" alt="Logo" class="d-inline-block align-top">
           </a>
       
           <!-- Bouton pour mobiles -->
@@ -267,17 +345,16 @@
                 <div class="card-body-img">
                     <div class="card-body-left">
                         <img
-                        src="https://via.placeholder.com/100"
+                        src="images/holy.svg"
                         alt="Icon"
                         class="d-block mx-auto mb-3"
                         />
                         <p class="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                          </p>
+                          HOLY révolutionne le monde des soft drinks en associant un goût qui claque à une bonne conscience.                          </p>
                     </div>
                     
                     <img
-                    src="https://via.placeholder.com/100"
+                    src="images/holy2.png"
                     alt="Icon"
                     class="d-block mx-auto mb-3"
                     />
@@ -291,17 +368,16 @@
                 <div class="card-body-img">
                     <div class="card-body-left">
                         <img
-                        src="https://via.placeholder.com/100"
+                        src="images/logo-award.png"
                         alt="Icon"
                         class="d-block mx-auto mb-3"
                         />
                         <p class="card-text">
-                            Sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua.
+                          La cérémonie qui récompense vos programmes TV préférés.
                         </p>
                     </div>
                     <img
-                    src="https://via.placeholder.com/100"
+                    src="images/samsung.png"
                     alt="Icon"
                     class="d-block mx-auto mb-3"
                     />
@@ -317,18 +393,17 @@
                 <div class="card-body-img">
                     <div class="card-body-left">
                         <img
-                        src="https://via.placeholder.com/100"
+                        src="images/pringles.svg"
                         alt="Icon"
                         class="d-block mx-auto mb-3"
                         />
                         <p class="card-text">
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris.
+                          Laissez-vous conquérir par le goût incroyable des chips tuiles. Découvrez toutes les nouvelles saveurs de Pringles.
                         </p>
                     </div>
                     
                     <img
-                    src="https://via.placeholder.com/100"
+                    src="images/netflixPr.png"
                     alt="Icon"
                     class="d-block mx-auto mb-3"
                     />
@@ -342,17 +417,16 @@
                 <div class="card-body-img">
                     <div class="card-body-left">
                         <img
-                        src="https://via.placeholder.com/100"
+                        src="images/asterix.png"
                         alt="Icon"
                         class="d-block mx-auto mb-3"
                         />
                         <p class="card-text">
-                            Duis aute irure dolor in reprehenderit in voluptate velit
-                            esse.
+                          Situé à 40 minutes de Paris, le Parc Astérix propose de nombreuses attractions ainsi que des spectacles vivants à découvrir entre amis ou en famille.
                         </p>
                     </div>
                     <img
-                    src="https://via.placeholder.com/100"
+                    src="images/obelix.png"
                     alt="Icon"
                     class="d-block mx-auto mb-3"
                     />
@@ -365,12 +439,24 @@
         <h1 class="section-title">Toplist Passées</h1>
         <div class="row justify-content-center">
           <div class="col-md-4">
-            <div class="card-item">
+            <div class="card-item1">
               <div class="card-body">
-                <h5 class="card-title">EuroMillions</h5>
-
                 <img
-                  src="https://www.figma.com/design/KTAVC63ZrRXH6SbBFQvlXB/VAINKEURZ-POUR-TWITCH?node-id=21-1182&t=95OF69sAmANj9D7f-4/100"
+                  src="images/1.png"
+                  alt="Icon"
+                />
+                <img
+                  src="images/unbonmaillot.com.png"
+                  alt="Icon"
+                /> 
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-item2">
+              <div class="card-body">
+                <img
+                  src="images/2.svg"
                   alt="Icon"
                   class="d-block mx-auto mb-3"
                 />
@@ -378,24 +464,10 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card-item">
+            <div class="card-item3">
               <div class="card-body">
-                <h5 class="card-title">japan</h5>
                 <img
-                  src="https://www.figma.com/design/KTAVC63ZrRXH6SbBFQvlXB/VAINKEURZ-POUR-TWITCH?node-id=21-1203&t=95OF69sAmANj9D7f-4/100"
-                  alt="Icon"
-                  class="d-block mx-auto mb-3"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card-item">
-              <div class="card-body">
-                <h5 class="card-title">XP-Pen</h5>
-
-                <img
-                  src="https://www.figma.com/design/KTAVC63ZrRXH6SbBFQvlXB/VAINKEURZ-POUR-TWITCH?node-id=21-1206&t=95OF69sAmANj9D7f-4/100"
+                  src="images/3.png"
                   alt="Icon"
                   class="d-block mx-auto mb-3"
                 />
@@ -456,7 +528,7 @@
       <div class="container d-flex justify-content-between align-items-center">
         <!-- Image à gauche -->
         <div class="footer-logo">
-          <img src="https://via.placeholder.com/50" alt="Logo" class="img-fluid">
+          <img src="images/vainkeurz.png" alt="Logo" class="img-fluid">
         </div>
     
         <!-- Texte centré -->
